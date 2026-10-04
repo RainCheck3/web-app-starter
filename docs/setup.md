@@ -41,3 +41,7 @@ Copy `.env.example` to `.env.local` when project-specific environment variables 
     cp .env.example .env.local
 
 Do not commit real secrets.
+
+## Learning setup
+
+For each new project, complete the one-time [learning setup](learning.md) before starting work. Keep the notebook outside the product repository.

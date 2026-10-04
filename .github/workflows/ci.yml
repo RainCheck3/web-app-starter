@@ -40,3 +40,6 @@ jobs:
 
       - name: Check formatting, lint, and build
         run: pnpm check
+
+      - name: Test local learning capture
+        run: python3 -m unittest discover -s scripts/tests -v

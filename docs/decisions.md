@@ -37,3 +37,7 @@ GitHub Actions runs `pnpm check` with the repository's Node and pnpm versions an
 ## Keep AI coding instructions tool-agnostic
 
 This project may be edited with Cursor, Codex, Claude Code, or other coding agents. Repository instructions should describe project conventions rather than tool-specific behavior.
+
+## Optional private learning capture
+
+A standard-library Python helper records commit/build/check evidence outside the repository after one-time setup. Shell wrappers preserve command output and exit status, and are inert before setup. Private reflection stays out of public repositories and CI artifacts. Agent notes and weekly reviews connect factual evidence to decisions; no model calls run inside builds or Git hooks.

@@ -121,3 +121,9 @@ Keep documentation concise and useful.
 - Do not introduce new frameworks or services without explicit approval.
 - Do not remove existing functionality unless asked.
 - Explain notable tradeoffs in plain language.
+
+## Learning workflow
+
+Read `docs/learning.md`. When `git config --local --get learning.notebook` is configured, read the notebook's direction, relevant playbook lessons, and the project's overview and recent notes before meaningful work. After a meaningful task, save one concise private note with `python3 scripts/learning.py note --area engineering` (or product/revenue), passing Markdown on stdin. Include hypothesis, observed evidence and links, what changed in understanding, decision/next action, and confidence. Mark missing product/revenue evidence unknown; never infer demand or income from a successful build. Do not create notes for every trivial edit.
+
+The build/check wrappers and local post-commit hook capture facts automatically after one-time setup. A build is not a deployment. Only record deployment after provider/environment verification. If learning capture is unconfigured or sandbox-blocked, report that briefly; never move private notes into tracked product files. Do not change notebook visibility, publish its contents, or propagate a proposed lesson to other projects without authorization.
